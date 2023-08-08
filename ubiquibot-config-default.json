@@ -1,7 +1,7 @@
 {
   "evm-network-id": 100,
   "price-multiplier": 1.5,
-  "issue-creator-multiplier": 2000,
+  "issue-creator-multiplier": 2,
   "time-labels": [
     {
       "name": "Time: <1 Hour",
