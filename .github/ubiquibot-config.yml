@@ -37,7 +37,9 @@ max-concurrent-bounties: 2
 command-settings:
   - name: "wallet"
     enabled: true
-  - name: "assign"
+  - name: "start"
+    enabled: true
+  - name: "stop"
     enabled: true
   - name: "query"
     enabled: true
