@@ -115,7 +115,7 @@ DISQUALIFY_TIME="7 days" // 7 days
 At this point the `.env` files auto-fill the empty fields (`PRIVATE_KEY` and `APP_ID`) if it is not previously filled.
 Now you can make changes to the repository on GitHub (e.g. add a bounty) and the bot should react.
 
-You can, for example:
+You can, for example 1:
 
 1. Create a new issue
 2. Add a time label, ex: `Time: <1 Day`
