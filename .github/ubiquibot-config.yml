@@ -17,7 +17,7 @@ time-labels:
   - name: "Time: <1 Week"
     weight: 2
     value: 60480
-priority-labels:
+    priority-labels:
   - name: "Priority: 0 (Normal)"
     weight: 1
   - name: "Priority: 1 (Medium)"
