@@ -1,5 +1,5 @@
 evm-network-iddd: 100
-price-multiplier: 1.5
+price-multiplier: "abc"
 issue-creator-multiplier: 2
 time-labels:
   - name: "Time: <1 Hour"
