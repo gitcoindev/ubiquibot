@@ -1,5 +1,5 @@
 evm-network-id: 100
-price-multiplier: "abc"
+price-multiplier: 5
 issue-creator-multiplier: 2
 time-labels:
   - name: "Time: <1 Hour"
