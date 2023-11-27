@@ -19,7 +19,7 @@ jobs:
         run: |
           pwd
           tree -L 3
-          npm install
+          yarn install
 
       - name: Post the knip results
         uses: gitcoindev/knip-reporter@v1.2.1
