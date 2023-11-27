@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Post the knip results
-        uses: codex-/knip-reporter@v1
+        uses: gitcoindev/knip-reporter@v1.2.1
         with:
           verbose: true
