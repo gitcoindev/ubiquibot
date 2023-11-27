@@ -331,6 +331,11 @@ export const calculateIssueAssigneeReward = async (incentivesCalculation: Incent
   };
 };
 
+export const unusedAction = async () => {
+  // catch me!
+  await addLabelToIssue("unusedAction");
+};
+
 export const handleIssueClosed = async (
   creatorReward: RewardsResponse,
   assigneeReward: RewardsResponse,
