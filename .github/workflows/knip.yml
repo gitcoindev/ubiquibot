@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: tree
-        run: tree -L3
+        run: |
+          pwd
+          tree -L 3
 
       - name: Post the knip results
         uses: gitcoindev/knip-reporter@v1.2.1
