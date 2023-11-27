@@ -19,7 +19,7 @@
     "format:check": "prettier -c src/**/*.ts",
     "format": "prettier --write src",
     "knip": "knip",
-    "knip-ci": "knip --no-exit-code --reporter json",
+    "knip-ci": "knip --no-exit-code --reporter jsonExt",
     "lint": "eslint --ext .ts ./src",
     "start:serverless": "tsx src/adapters/github/github-actions.ts",
     "start:watch": "nodemon --exec 'yarn start'",
