@@ -22,10 +22,11 @@ jobs:
         run: |
           pwd
           tree -L 3
-          yarn install
+          npm install
 
       - name: Post the knip results
         uses: gitcoindev/knip-reporter@v1.2.1
         with:
           verbose: true
           comment_id: ${{ github.workflow }}-reporter
+          command_script_name: knip-ci
