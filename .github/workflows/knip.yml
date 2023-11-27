@@ -24,7 +24,7 @@ jobs:
           yarn install
 
       - name: Post the knip results
-        uses: codex-/knip-reporter@v1
+        uses: gitcoindev/knip-reporter@v1.2.2
         with:
           verbose: true
           comment_id: ${{ github.workflow }}-reporter
