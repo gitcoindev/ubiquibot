@@ -3,8 +3,7 @@ name: Knip
 on:
   pull_request:
 
-permissions:
-  checks: write
+permissions: write-all
 
 jobs:
   run-knip:
@@ -18,7 +17,15 @@ jobs:
         with:
           node-version: "18.14.1"
 
+      - name: tree
+        run: |
+          pwd
+          tree -L 3
+          yarn install
+
       - name: Post the knip results
         uses: gitcoindev/knip-reporter@v1.2.1
         with:
           verbose: true
+          comment_id: ${{ github.workflow }}-reporter
+          command_script_name: knip-ci
