@@ -1,0 +1,16 @@
+name: Knip
+
+on:
+  pull_request:
+
+permissions:
+  checks: write
+
+jobs:
+  run-knip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post the knip results
+        uses: codex-/knip-reporter@v1
+        with:
+          verbose: true
