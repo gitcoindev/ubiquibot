@@ -336,6 +336,16 @@ export const unusedAction = async () => {
   await addLabelToIssue("unusedAction");
 };
 
+export const unusedAction2 = async () => {
+  // catch me!
+  await addLabelToIssue("unusedAction2");
+};
+
+export const unusedAction3 = async () => {
+  // catch me 3!
+  await addLabelToIssue("unusedAction3");
+};
+
 export const handleIssueClosed = async (
   creatorReward: RewardsResponse,
   assigneeReward: RewardsResponse,

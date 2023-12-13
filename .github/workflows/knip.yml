@@ -15,17 +15,18 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18.14.1"
+          node-version: 20.10.x
 
       - name: tree
         run: |
           pwd
-          tree -L 3
           yarn install
 
       - name: Post the knip results
-        uses: gitcoindev/knip-reporter@v1.2.1
+        uses: Codex-/knip-reporter@v2
         with:
           verbose: true
           comment_id: ${{ github.workflow }}-reporter
           command_script_name: knip-ci
+          annotations: true
+          ignore_results: false
